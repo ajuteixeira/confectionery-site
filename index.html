@@ -4,36 +4,44 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Maria Moreno | Confeitaria caseira</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
     </head>
     <body>
         <header>
-            <nav class="menu">
+            <nav role="navigation" class="menu">
                 <img src="img/nav-logo.png" alt="logo">
-                <ul>
-                    <li>
-                        <a href="#about">nós</a>
-                    </li>
-                    <li>
-                        <a href="#products">produtos</a>
-                    </li>
-                    <li>
-                        <a href="#differentials">diferenciais</a>
-                    </li>
-                    <li>
-                        <a href="#specifications">detalhes</a>
-                    </li>
-                    <li>
-                        <a href="#contact">contatos</a>
-                    </li>
-                </ul>
+                <div id="menuToggle">
+                    <input type="checkbox"/>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <li>
+                            <a href="#about">Nós</a>
+                        </li>
+                        <li>
+                            <a href="#products">Produtos</a>
+                        </li>
+                        <li>
+                            <a href="#differentials">Diferenciais</a>
+                        </li>
+                        <li>
+                            <a href="#specifications">Especificações</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contato</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
             <div class="header-content ">
                 <h1>Confeitaria com afeto</h1>
                 <h2>Bolos e doces caseiros com produção diária e familiar</h2>
-                <button>Saiba mais</button>
+                <button type="button"><a href="#contact">Fazer encomenda</a></button>
             </div>
+            
         </header>
         <section class="about container" id="about">
             <h3>Nossa história</h3>
@@ -87,9 +95,7 @@
         </section>
         <section class="contact container" id="contact">
             <h3>Nossos contatos</h3>
-            <p>Para mais informações sobre produtos e encomendas, entre em contato por meio do nosso email
-                <strong>contatomariadocemel@gmail.com</strong>
-                ou fale com a gente em nossos perfis nas redes sociais:</p>
+            <p>Para mais informações sobre produtos e encomendas, entre em contato por meio do nosso telefone ou fale com a gente nas redes sociais:</p>
             <div class="contact-content">
                 <a href="#"><img src="img/contact-instagram.svg" alt="Instagram"></a>
                 <a href="#"><img src="img/contact-facebook.svg" alt="Facebook"></a>
